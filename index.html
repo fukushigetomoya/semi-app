@@ -5,7 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/main.js" defer></script>
+    <script src="js/timer.js" defer></script>
     <title>Semi-app</title>
   </head>
-  <body></body>
+  <body>
+    <h1>タイマーを作る</h1>
+    <form onsubmit="startTimer(); return false;">
+      <label for="timer-input">分数を入力：</label>
+      <input
+        type="number"
+        id="timer-input"
+        value="30"
+        min="1"
+        placeholder="分数を入力"
+        autofocus
+      />
+      <button type="submit">スタート</button>
+    </form>
+    <div id="timer">00:00</div>
+  </body>
 </html>
