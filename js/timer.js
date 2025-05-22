@@ -1,27 +1,28 @@
 let countdown;
 
 function startTimer() {
-  clearInterval(countdown); // 前のタイマーを停止
+  clearInterval(countdown);
 
   const minutes = document.getElementById("timer-input").value;
-  let totalSeconds = minutes * 60;
 
-  if (isNaN(minutes) || minutes <= 0) {
+  let totalTime = minutes * 60;
+
+  if (minutes <= 0) {
     alert("1以上の有効な分数を入力してください");
     return;
   }
 
   function updateDisplay() {
-    const mins = Math.floor(totalSeconds / 60);
-    const secs = totalSeconds % 60;
+    const min = Math.floor(totalTime / 60);
+    const sec = totalTime % 60;
     document.getElementById("timer").textContent =
-      (mins < 10 ? "0" : "") + mins + ":" + (secs < 10 ? "0" : "") + secs;
+      (min < 10 ? "0" : "") + min + ":" + (sec < 10 ? "0" : "") + sec;
 
-    if (totalSeconds <= 0) {
+    if (totalTime <= 0) {
       clearInterval(countdown);
       document.getElementById("timer").textContent = "時間切れ！";
     } else {
-      totalSeconds--;
+      totalTime--;
     }
   }
 
