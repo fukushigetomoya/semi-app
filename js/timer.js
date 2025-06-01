@@ -3,6 +3,8 @@ let countdown;
 function startTimer() {
   clearInterval(countdown);
 
+  let startTime = new Date();
+
   const minutes = document.getElementById("timer-input").value;
 
   let totalTime = minutes * 60;
@@ -27,5 +29,11 @@ function startTimer() {
   }
 
   updateDisplay(); // すぐに表示を更新
-  countdown = setInterval(updateDisplay, 1000); // 1秒ごとに更新
+  countdown = setInterval(updateDisplay, 1000);
+}
+
+function resetTimer() {
+  clearInterval(countdown);
+  document.getElementById("timer").textContent = "00:00";
+  document.getElementById("timer-input").value = "";
 }
