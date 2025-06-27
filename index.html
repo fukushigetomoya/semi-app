@@ -8,71 +8,79 @@
     <title>Semi-app</title>
   </head>
   <body>
-    <h1>評価画面</h1>
-    <form id="reviewForm">
-      <fieldset>
-        <legend>満足度を選択してください</legend>
-        <input
-          type="radio"
-          id="satisfaction1"
-          name="rating_satisfaction"
-          value="1"
-          required
-        />
-        <label for="satisfaction1">1</label>
+    <div id="reviewPage" class="screen active">
+      <h1>評価画面</h1>
+      <form id="reviewForm">
+        <fieldset>
+          <legend>満足度を選択してください</legend>
+          <input
+            type="radio"
+            id="satisfaction1"
+            name="rating_satisfaction"
+            value="1"
+            required
+          />
+          <label for="satisfaction1">1</label>
 
-        <input
-          type="radio"
-          id="satisfaction2"
-          name="rating_satisfaction"
-          value="2"
-        />
-        <label for="satisfaction2">2</label>
+          <input
+            type="radio"
+            id="satisfaction2"
+            name="rating_satisfaction"
+            value="2"
+          />
+          <label for="satisfaction2">2</label>
 
-        <input
-          type="radio"
-          id="satisfaction3"
-          name="rating_satisfaction"
-          value="3"
-        />
-        <label for="satisfaction3">3</label>
+          <input
+            type="radio"
+            id="satisfaction3"
+            name="rating_satisfaction"
+            value="3"
+          />
+          <label for="satisfaction3">3</label>
 
-        <input
-          type="radio"
-          id="satisfaction4"
-          name="rating_satisfaction"
-          value="4"
-        />
-        <label for="satisfaction4">4</label>
+          <input
+            type="radio"
+            id="satisfaction4"
+            name="rating_satisfaction"
+            value="4"
+          />
+          <label for="satisfaction4">4</label>
 
-        <input
-          type="radio"
-          id="satisfaction5"
-          name="rating_satisfaction"
-          value="5"
-        />
-        <label for="satisfaction5">5</label>
-      </fieldset>
+          <input
+            type="radio"
+            id="satisfaction5"
+            name="rating_satisfaction"
+            value="5"
+          />
+          <label for="satisfaction5">5</label>
+        </fieldset>
 
-      <fieldset>
-        <legend>気分を選択してください</legend>
-        <input type="radio" id="mood1" name="rating_mood" value="1" required />
-        <label for="mood1">1</label>
+        <fieldset>
+          <legend>気分を選択してください</legend>
+          <input
+            type="radio"
+            id="mood1"
+            name="rating_mood"
+            value="1"
+            required
+          />
+          <label for="mood1">1</label>
 
-        <input type="radio" id="mood2" name="rating_mood" value="2" />
-        <label for="mood2">2</label>
+          <input type="radio" id="mood2" name="rating_mood" value="2" />
+          <label for="mood2">2</label>
 
-        <input type="radio" id="mood3" name="rating_mood" value="3" />
-        <label for="mood3">3</label>
+          <input type="radio" id="mood3" name="rating_mood" value="3" />
+          <label for="mood3">3</label>
 
-        <input type="radio" id="mood4" name="rating_mood" value="4" />
-        <label for="mood4">4</label>
+          <input type="radio" id="mood4" name="rating_mood" value="4" />
+          <label for="mood4">4</label>
 
-        <input type="radio" id="mood5" name="rating_mood" value="5" />
-        <label for="mood5">5</label>
-      </fieldset>
+          <input type="radio" id="mood5" name="rating_mood" value="5" />
+          <label for="mood5">5</label>
+        </fieldset>
 
-      <button type="submit">設定</button>
-    </form>
+        <button type="submit">設定</button>
+      </form>
+    </div>
   </body>
 </html>
